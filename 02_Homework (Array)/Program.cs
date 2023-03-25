@@ -93,62 +93,62 @@ namespace _02_Homework__Array_
 
 
             //Task 6
-            Random rnd = new Random();
-            int n = 20;
-            int[] array = new int[n];
-            for (int i = 0; i < array.Length; i++)
-                array[i] = rnd.Next(0, 10);
-            Console.WriteLine("Масив: [{0}]", string.Join(", ", array));
-            // Знаходимо найдовшу послідовність чисел, впорядковану за зростанням
-            int maxLength = 1;
-            int currentLength = 1;
-            int endPosition = 0;
-            for (int i = 1; i < n; i++)
-            {
-                if (array[i] >= array[i - 1])
-                {
-                    currentLength++;
-                    if (currentLength > maxLength)
-                    {
-                        maxLength = currentLength;
-                        endPosition = i;
-                    }
-                }
-                else
-                    currentLength = 1;
-            }
+            //Random rnd = new Random();
+            //int n = 20;
+            //int[] array = new int[n];
+            //for (int i = 0; i < array.Length; i++)
+            //    array[i] = rnd.Next(0, 10);
+            //Console.WriteLine("Масив: [{0}]", string.Join(", ", array));
+            //// Знаходимо найдовшу послідовність чисел, впорядковану за зростанням
+            //int maxLength = 1;
+            //int currentLength = 1;
+            //int endPosition = 0;
+            //for (int i = 1; i < n; i++)
+            //{
+            //    if (array[i] >= array[i - 1])
+            //    {
+            //        currentLength++;
+            //        if (currentLength > maxLength)
+            //        {
+            //            maxLength = currentLength;
+            //            endPosition = i;
+            //        }
+            //    }
+            //    else
+            //        currentLength = 1;
+            //}
 
-            // Виводимо найдовшу послідовність чисел, впорядковану за зростанням
-            Console.Write("Найдовша послідовність чисел, впорядкована за зростанням: ");
-            for (int i = endPosition - maxLength + 1; i <= endPosition; i++)
-                Console.Write("{0} ", array[i]);
-            Console.WriteLine();
+            //// Виводимо найдовшу послідовність чисел, впорядковану за зростанням
+            //Console.Write("Найдовша послідовність чисел, впорядкована за зростанням: ");
+            //for (int i = endPosition - maxLength + 1; i <= endPosition; i++)
+            //    Console.Write("{0} ", array[i]);
+            //Console.WriteLine();
 
-            // Виводимо всі послідовності чисел з найдовшою довжиною
-            Console.Write("Всі послідовності чисел з найдовшою довжиною: ");
-            for (int i = 0; i < n - maxLength + 1; i++)
-            {
-                currentLength = 1;
-                for (int j = i + 1; j < n; j++)
-                {
-                    if (array[j] >= array[j - 1])
-                    {
-                        currentLength++;
-                        if (currentLength == maxLength)
-                        {
-                            for (int k = i; k <= j; k++)
-                                Console.Write("{0} ", array[k]);
-                            Console.Write("| ");
-                        }
-                    }
-                    else
-                    {
-                        currentLength = 1;
-                        break;
-                    }
-                }
-            }
-            Console.WriteLine();
+            //// Виводимо всі послідовності чисел з найдовшою довжиною
+            //Console.Write("Всі послідовності чисел з найдовшою довжиною: ");
+            //for (int i = 0; i < n - maxLength + 1; i++)
+            //{
+            //    currentLength = 1;
+            //    for (int j = i + 1; j < n; j++)
+            //    {
+            //        if (array[j] >= array[j - 1])
+            //        {
+            //            currentLength++;
+            //            if (currentLength == maxLength)
+            //            {
+            //                for (int k = i; k <= j; k++)
+            //                    Console.Write("{0} ", array[k]);
+            //                Console.Write("| ");
+            //            }
+            //        }
+            //        else
+            //        {
+            //            currentLength = 1;
+            //            break;
+            //        }
+            //    }
+            //}
+            //Console.WriteLine();
 
         }
 

@@ -9,20 +9,25 @@ namespace _06_Homework__Exception_
     internal class Account
     {
         private string email;
-        public string Email 
-        { 
+        public string Email
+        {
             get { return email; }
             set
             {
-                if ((4 < value.Length) && (value.Length < 50) &&
-                    (value.Where(x => (char)x == '@').ToArray().Length == 1) &&
-                    (value.Where(x => char.IsLetter(x) || char.IsDigit(x) || (x == '_') || (x == '@')).ToArray().Length == value.Length))
+                if ((value.Length < 4) || (50 < value.Length))
+                    throw new ArgumentException("Not correct lenght email");
+
+                if (value.Where(x => (char)x == '@').ToArray().Length != 1)
+                    throw new ArgumentException("There must be only one '@' symbol in email");
+
+                if (!(value.Where(x => char.IsLetter(x) || char.IsDigit(x) || (x == '_') || (x == '@')).ToArray().Length == value.Length))
+                    throw new ArgumentException("Email can only contain numbers, letters, and the '@' and '_' symbols");
+
+                else
                 {
                     Console.WriteLine("Seccess email");
                     email = value;
                 }
-                else
-                    throw new ArgumentException("Not correct format email");
             }
         }
         private string password;
@@ -30,17 +35,21 @@ namespace _06_Homework__Exception_
         public string Password
         {
             get { return password; }
-            set 
+            set
             {
-                if ((6 < value.Length) &&
-                    (0 < value.Where(x => char.IsLetter(x)).ToArray().Length) &&
-                    (0 < value.Where(x => char.IsDigit(x)).ToArray().Length))
+                if (value.Length < 6)
+                    throw new ArgumentException("Too small passwords length");
+
+                if (0 == value.Where(x => char.IsLetter(x)).ToArray().Length)
+                    throw new ArgumentException("Password must contain at least one letter");
+                if (0 == value.Where(x => char.IsDigit(x)).ToArray().Length)
+                    throw new ArgumentException("Password must contain at least one digit");
+
+                else
                 {
                     Console.WriteLine("Seccess email");
                     password = value;
                 }
-                else
-                    throw new ArgumentException("Not correct format password");
             }
         }
         public Account(string email, string password)

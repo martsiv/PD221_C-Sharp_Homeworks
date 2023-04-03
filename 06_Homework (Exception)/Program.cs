@@ -2,7 +2,7 @@
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void EnterAccountData(out Account acc)
         {
             while (true)
             {
@@ -12,7 +12,7 @@
                     string email = Console.ReadLine();
                     Console.WriteLine("Enter the password");
                     string password = Console.ReadLine();
-                    Account acc = new Account(email, password);
+                    acc = new Account(email, password);
                 }
                 catch (ArgumentException e)
                 {
@@ -26,6 +26,21 @@
                 }
                 break;
             }
+        }
+        static void Main(string[] args)
+        {
+            //Account
+            Account acc;
+            EnterAccountData(out acc);
+
+            //Credit Card
+            try
+            {
+                CreditCard visa = new CreditCard("Visa", "4556481986697540", DateTime.Parse("25-12-25"), 423);
+                Console.WriteLine(visa);
+            }
+            catch (ArgumentException e)
+            { Console.WriteLine(e); }
         }
     }
 }

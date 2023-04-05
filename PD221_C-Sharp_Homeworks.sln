@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04_Homework (Train)", "04_H
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05_Homework (Classes. Props)", "05_Homework (Classes. Props)\05_Homework (Classes. Props).csproj", "{811C8BAD-F7B7-429C-AF26-5A06ACE05AA5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06.1_Homework (Exception)", "06_Homework (Exception)\06.1_Homework (Exception).csproj", "{EFF95460-52C9-4427-8601-13D7F14BE96E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "06.1_Homework (Exception)", "06_Homework (Exception)\06.1_Homework (Exception).csproj", "{EFF95460-52C9-4427-8601-13D7F14BE96E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07_Homework (Operator overloading. Task Time)", "07_Homework (Operator overloading. Task Time)\07_Homework (Operator overloading. Task Time).csproj", "{C2DDBFA3-2EC2-410B-AB5C-849BE1A35572}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{EFF95460-52C9-4427-8601-13D7F14BE96E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EFF95460-52C9-4427-8601-13D7F14BE96E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EFF95460-52C9-4427-8601-13D7F14BE96E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2DDBFA3-2EC2-410B-AB5C-849BE1A35572}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2DDBFA3-2EC2-410B-AB5C-849BE1A35572}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2DDBFA3-2EC2-410B-AB5C-849BE1A35572}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2DDBFA3-2EC2-410B-AB5C-849BE1A35572}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

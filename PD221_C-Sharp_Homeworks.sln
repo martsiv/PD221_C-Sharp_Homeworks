@@ -25,7 +25,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "09_Homework (Class Wars)", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "10_Homework (Interfaces)", "10_Homework (Interfaces)\10_Homework (Interfaces).csproj", "{FDE50878-48F4-49E9-A49D-98CCFAD94F79}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11_Homework (Built-in) (Train)", "11_Homework (Built-in) (Train)\11_Homework (Built-in) (Train).csproj", "{31DDF55C-BA10-4931-93EC-357039CDB139}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "11_Homework (Built-in) (Train)", "11_Homework (Built-in) (Train)\11_Homework (Built-in) (Train).csproj", "{31DDF55C-BA10-4931-93EC-357039CDB139}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12_Homework (Generic collections)", "12_Homework (Generic collections)\12_Homework (Generic collections).csproj", "{19FCB732-4AB5-4989-A6EC-22BBBE8FFCC8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +83,10 @@ Global
 		{31DDF55C-BA10-4931-93EC-357039CDB139}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{31DDF55C-BA10-4931-93EC-357039CDB139}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{31DDF55C-BA10-4931-93EC-357039CDB139}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19FCB732-4AB5-4989-A6EC-22BBBE8FFCC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19FCB732-4AB5-4989-A6EC-22BBBE8FFCC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19FCB732-4AB5-4989-A6EC-22BBBE8FFCC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19FCB732-4AB5-4989-A6EC-22BBBE8FFCC8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

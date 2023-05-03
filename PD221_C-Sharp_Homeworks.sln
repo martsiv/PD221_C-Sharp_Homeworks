@@ -31,7 +31,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "12_Homework (Generic collec
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "13_Homework ((Serialization)", "13_Homework ((Serialization)\13_Homework ((Serialization).csproj", "{722EE36F-8CE9-4E7D-BCFD-F844C62262F3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14_Homework (Delegates)", "14_Homework (Delegates)\14_Homework (Delegates).csproj", "{318A86F0-71B1-46F9-974D-5AEE3857CE68}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "14_Homework (Delegates)", "14_Homework (Delegates)\14_Homework (Delegates).csproj", "{318A86F0-71B1-46F9-974D-5AEE3857CE68}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "15_Homework (Events) Task Trader", "15_Homework (Events) Task Trader\15_Homework (Events) Task Trader.csproj", "{D7DEDB3D-6E78-4DF7-85CF-ED32ACD54FD5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -99,6 +101,10 @@ Global
 		{318A86F0-71B1-46F9-974D-5AEE3857CE68}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{318A86F0-71B1-46F9-974D-5AEE3857CE68}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{318A86F0-71B1-46F9-974D-5AEE3857CE68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7DEDB3D-6E78-4DF7-85CF-ED32ACD54FD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7DEDB3D-6E78-4DF7-85CF-ED32ACD54FD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7DEDB3D-6E78-4DF7-85CF-ED32ACD54FD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7DEDB3D-6E78-4DF7-85CF-ED32ACD54FD5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
